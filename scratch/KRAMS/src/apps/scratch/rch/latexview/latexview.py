@@ -52,7 +52,7 @@ class LatexEngine( HasTraits ):
                 # now process the individual views
                 litem.export_latex( obj )
         else:
-            raise AttributeErrror, 'No latex view defined on %s' % obj
+            raise AttributeError('No latex view defined on %s' % obj)
 
 
 le = LatexEngine()
